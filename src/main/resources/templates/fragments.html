@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fragments</title>
+    <th:block th:fragment="link-style">
+        <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.css}"/>
+        <link rel="stylesheet" th:href="@{/css/styles.css}"/>
+    </th:block>
+</head>
+<body>
+<th:block th:fragment="navigator">
+    <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+            </a>
+            <a class="py-2 d-none d-md-inline-block" th:href="@{/}">Home</a>
+            <a class="py-2 d-none d-md-inline-block" th:href="@{/}">Home</a>
+            <a class="py-2 d-none d-md-inline-block" th:href="@{/}">Home</a>
+        </div>
+    </nav>
+</th:block>
+
+<th:block th:fragment="scripts">
+    <script th:src="@{webjars/jquery/3.3.1/jquery.min.js}"></script>
+    <script th:src="@{webjars/popper.js/1.14.3/popper.min.js}"></script>
+    <script th:src="@{webjars/bootstrap/4.3.1/js/bootstrap.min.js}"></script>
+</th:block>
+
+
+</body>
+</html>

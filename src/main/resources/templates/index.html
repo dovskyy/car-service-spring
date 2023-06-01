@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <th:block th:replace="fragments :: link-style" th:remove="tag"/>
+</head>
+<body>
+<th:block th:replace="fragments :: navigator" th:remove="tag"></th:block>
+
+<div class="container">
+    <h1>Witam</h1>
+</div>
+
+<th:block th:replace="fragments :: scripts" th:remove="tag"></th:block>
+</body>
+</html>
